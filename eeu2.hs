@@ -145,7 +145,7 @@ mediano x y z = x + y + z - maximum [x,y,z] - minimum [x,y,z]
 -- tresIguales 4 4 4 == True
 -- tresIguales 4 3 4 == False
 tresIguales :: Eq a => a -> a -> a -> Bool
-tresIguales x y z = (x == z) && (y == z)
+tresIguales x y z = (x == y) && (y == z)
 
 
 -- Ejercicio 17. Definir la función tresDiferentes tal que
@@ -154,7 +154,7 @@ tresIguales x y z = (x == z) && (y == z)
 -- tresDiferentes 3 5 2 == True
 -- tresDiferentes 3 5 3 == False
 tresDiferentes :: Eq a => a -> a -> a -> Bool
-tresDiferentes x y z = (x /= z) && (y /= z) && (x /= z)
+tresDiferentes x y z = (x /= y) && (y /= z) && (x /= z)
 
 
 -- Ejercicio 18. Definir la función cuatroIguales tal que
